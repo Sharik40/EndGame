@@ -5,7 +5,7 @@ void first_scene_2(t_game *container) {
         container->current_scene_1 = 2;
         SDL_FreeSurface(container->image);
 		container->image = NULL;
-        container->image = SDL_LoadBMP("./resource/Introduse1.2.bmp");
+        container->image = IMG_Load("./resource/Introduse1.2.jpeg");
         container->imageTex = SDL_CreateTextureFromSurface(container->renderer, container->image);
         play_click(container);
     }

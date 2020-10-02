@@ -6,7 +6,7 @@ void forward(t_game *container) {
         container->current_scene_1 = 12.4;
         SDL_FreeSurface(container->image);
 		container->image = NULL;
-        container->image = SDL_LoadBMP("./resource/Scene 3B.bmp");
+        container->image = IMG_Load("./resource/Scene_3B.jpeg");
         print_time(container);
         play_click(container);
         container->imageTex = SDL_CreateTextureFromSurface(container->renderer, container->image);

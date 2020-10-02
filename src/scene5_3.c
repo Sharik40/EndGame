@@ -5,7 +5,7 @@ void diapers_duct_tape(t_game *container) {
         container->current_scene_1 = 13.3;
         SDL_FreeSurface(container->image);
 		container->image = NULL;
-        container->image = SDL_LoadBMP("./resource/Scene3A1.bmp");
+        container->image = IMG_Load("./resource/Scene3A1.jpeg");
         print_time(container);
         play_click(container);
         container->imageTex = SDL_CreateTextureFromSurface(container->renderer, container->image);

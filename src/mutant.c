@@ -6,7 +6,7 @@ void mutant(t_game *container) {
         container->current_scene_1 = 12.1;
         SDL_FreeSurface(container->image);
 		container->image = NULL;
-        container->image = SDL_LoadBMP("./resource/Scene 3D.bmp");
+        container->image = IMG_Load("./resource/Scene_3D.jpeg");
         print_time(container);
         play_click(container);
         container->imageTex = SDL_CreateTextureFromSurface(container->renderer, container->image);

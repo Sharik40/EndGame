@@ -5,7 +5,7 @@ void third_scene_2(t_game *container) {
         container->current_scene_1 = 8;
         SDL_FreeSurface(container->image);
 		container->image = NULL;
-        container->image = SDL_LoadBMP("./resource/Sewers2.0.bmp");
+        container->image = IMG_Load("./resource/Sewers2.0.jpeg");
         print_time(container);
         play_click(container);
         container->imageTex = SDL_CreateTextureFromSurface(container->renderer, container->image);

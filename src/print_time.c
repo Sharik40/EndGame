@@ -3,7 +3,7 @@
 void print_time(t_game *container) {
     if (TTF_Init() == -1) {
         printf("Unable to initialize SDL_ttf: %s \n", TTF_GetError());
-    } 
+    }
     TTF_Font* my_font = NULL;
     my_font = TTF_OpenFont("./resource/AGENCYR.TTF", 31);
     SDL_Rect textLocation = { 999, 40, 90, 25 };
